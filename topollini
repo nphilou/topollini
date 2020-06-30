@@ -1,0 +1,95 @@
+neuronal network dynamics
+spike train
+functional connectome
+connectedness, adjacency, global structure
+spike train distance
+weighted graphs based on spike train similarities
+topological space
+persistence homology (expensive)
+
+spike train => weighted graphs => topological space => persistence
+homology/diagrams
+
+topological invariants
+cohen_kappa_score
+
+Pearson corr
+SPIKE-synchronicity
+SPIKE-distance
+
+algebraic topology
+Betti numbers
+simplicial complexes
+CW-complexes
+compact manifolds
+
+filtration, multiscale sequence of spaces depending on a threshold
+persistent homology
+output of PH of the space build from pairwise spike train similarities as input for ML
+
+Takens embedding: delayed-time embedding technique
+given a time series X(t), one can extract a sequence of vectors of the form X_i := [(X(t_i)), X(t_i + 2 tau), ..., X(t_i + M tau)]
+t_i - t_i-1 := *stride*
+optimisation of M and tau ?
+Optimal embedding time delay based on mutual information:  3
+Optimal embedding dimension based on false nearest neighbors:  10
+
+false nearest neighbor algorithm
+
+optimisation
+game theory
+CV
+neuroscience
+
+vectorization of PD
+finite-dimensional embedding <-> PD = vectors in Rd
+kernels <-> PD = elem of infinite dim Hilbert spaces
+
+topo, 0.2 TTS, 0.229 P, 0.370 F
+tsf,  0.2 TTS, 0.345 P, 0.479 F
+
+Problem: Topological data analysis of neural code
+
+0.288 AllKNN
+0.271 random under
+0.203 random over
+0.265 SMOTE
+0.262 ADASYN
+
+0.191 no kde
+0.165 kde
+
+['betti',
+ 'bc0_area_kde',
+ 'betti_kde',
+ 'heat',
+ 'bc0_area',
+ 'heat_kde',
+ 'wasserstein',
+ 'bottleneck',
+ 'wasserstein_kde',
+ 'landscape',
+ 'f4_d0',
+ 'f1_d0',
+ 'f1_d1_kde',
+ 'moment_1_kde',
+ 'bc1_area_kde',
+ 'f3_d0',
+ 'f4_d1_kde',
+ 'moment_2_kde',
+ 'f1_d0_kde',
+ 'f0_d1_kde',
+ 'f3_d1_kde',
+ 'f4_d0_kde',
+ 'landscape_kde',
+ 'bottleneck_kde',
+ 'f3_d0_kde',
+ 'f2_d1_kde',
+ 'moment_1',
+ 'bc1_area',
+ 'f4_d1',
+ 'f3_d1',
+ 'f2_d1',
+ 'f1_d1',
+ 'f0_d1',
+ 'moment_2']
